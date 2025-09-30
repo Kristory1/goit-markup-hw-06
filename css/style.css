@@ -383,3 +383,126 @@ button {
     margin-bottom: 8px;
   }
 }
+
+/*TEAM*/
+.team-cont {
+  background-color: #f4f4fd;
+  padding: 96px 0;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  text-transform: capitalize;
+
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+.team-list-item {
+  width: 264px;
+  height: 428px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-list-item-cont {
+  padding: 32px 0;
+}
+
+.team-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-list-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+
+  text-align: center;
+}
+
+.team-list-item-cont-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.team-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.team-icon-a {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon-a:hover,
+.team-icon-a:focus {
+  background-color: #404bbf;
+}
+
+.team-icon-svg {
+  fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .team-list-item {
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team-cont {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: none;
+    justify-content: none;
+    gap: 24px;
+  }
+
+  .team-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+}
