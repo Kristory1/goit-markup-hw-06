@@ -319,3 +319,67 @@ button {
     margin: 0 auto 48px auto;
   }
 }
+
+/*ADVANTAGE*/
+.advan-cont {
+  padding: 96px 0;
+}
+
+.advan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.advan-icon {
+  display: none;
+}
+
+.advan-list-item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+
+  margin-bottom: 8px;
+}
+
+.advan-list-item-descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+  .advan-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .advan-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .advan-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .advan-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+  }
+}
